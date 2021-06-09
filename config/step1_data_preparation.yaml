@@ -1,0 +1,29 @@
+input:
+  customers: 'olist_customers_dataset.csv'
+  geolocation: 'olist_geolocation_dataset.csv'
+  order_items: 'olist_order_items_dataset.csv'
+  order_payments: 'olist_order_payments_dataset.csv'
+  order_reviews: 'olist_order_reviews_dataset.csv'
+  orders: 'olist_orders_dataset.csv'
+  products: 'olist_products_dataset.csv'
+  sellers: 'olist_sellers_dataset.csv'
+  product_translation: 'product_category_name_translation.csv'
+
+output:
+  complete_data_path: 'data/complete_data.pkl'
+  classifier_data_path: 'data/classifier_data.pkl'
+  unlabeled_data_path: 'data/unlabeled_data.pkl'
+  encoder_path: 'data/encoders.pkl'
+  classifier_columns_path: 'data/columns_dict.pkl'
+  product_recommendation_table_path: 'data/product_rec.pkl'
+  
+control:
+  date_columns: ['order_delivered_customer_date']
+  classifier_columns: 
+    numerical: ['review_score']
+    categorical: ['customer_location_cluster',
+                  'seller_location_cluster', 
+                  'product_category_name']
+    target: ['next_product_category']
+  geolocation:
+    kmeans_clusters: 5

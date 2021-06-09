@@ -1,0 +1,12 @@
+input:
+  complete_data_path: 'data/complete_data.pkl'
+  data_path: 'data/unlabeled_data.pkl'
+  model_path: 'models/classifier.pkl'
+  encoder_path: 'data/encoders.pkl'
+  classifier_columns_path: 'data/columns_dict.pkl'
+  product_recommendation_table_path: 'data/product_rec.pkl'
+  
+output:
+  
+control:
+  
