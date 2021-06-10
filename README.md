@@ -3,7 +3,7 @@ Simple framework for generating product recommendations based on the Brazilian
 E-commerce dataset by Olist (https://www.kaggle.com/olistbr/brazilian-ecommerce)
 
 # How to use this repository
-1. Download and extract the above dataset in data/raw/ folder.
+1. Download and extract the above dataset into the repository in data/raw/.
 2. Run main.py. This will carry out the data preparation, modelling and also run
  a basic prediction.
 3. Once the model is trained, you can use run_prediction.py for generating 

@@ -1,6 +1,7 @@
 # Data and output
 data/*
 results/*
+models/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
