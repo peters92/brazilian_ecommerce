@@ -21,10 +21,6 @@ class Predictor():
         self.product_recommendation_tables = \
             load_data(self.config['input']['product_recommendation_table_path'])
 
-
-        # TODO: remove later
-        self.debug = None
-
     def predict_category_random(self, sample_size=5, to_print=True):
         sample = self.complete_data.sample(n=sample_size, random_state=None)
         # Generates product category prediction for a random sample 
